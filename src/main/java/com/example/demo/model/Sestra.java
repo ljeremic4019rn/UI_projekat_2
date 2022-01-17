@@ -7,7 +7,7 @@ import java.util.List;
 public class Sestra {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    private Long zaposleniId;
+    private Long SestraId;
     private Boolean licenca;
     private String pozicija;
     @OneToOne
@@ -25,12 +25,12 @@ public class Sestra {
         this.covidListe = covidListe;
     }
 
-    public Long getZaposleniId() {
-        return zaposleniId;
+    public Long getSestraId() {
+        return SestraId;
     }
 
-    public void setZaposleniId(Long zaposleniId) {
-        this.zaposleniId = zaposleniId;
+    public void setSestraId(Long zaposleniId) {
+        this.SestraId = zaposleniId;
     }
 
     public Boolean getLicenca() {

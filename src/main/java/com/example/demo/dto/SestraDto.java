@@ -3,7 +3,7 @@ package com.example.demo.dto;
 import java.util.List;
 
 public class SestraDto  {
-    private int zaposleniId;
+    private int sestraId;
     private Boolean licenca;
     private String pozicija;
     private BlokDto blok;
@@ -37,12 +37,12 @@ public class SestraDto  {
     public SestraDto() {
     }
 
-    public void setZaposleniId(int zaposleniId) {
-        this.zaposleniId = zaposleniId;
+    public void setSestraId(int sestraId) {
+        this.sestraId = sestraId;
     }
 
-    public int getZaposleniId() {
-        return this.zaposleniId;
+    public int getSestraId() {
+        return this.sestraId;
     }
 
     public void setLicenca(Boolean licenca) {

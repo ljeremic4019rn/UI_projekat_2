@@ -10,14 +10,14 @@ import java.util.Objects;
 public class Racunovodja {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    private Long zaposleniId;
+    private Long racunovodjaId;
 
-    public Long getZaposleniId() {
-        return zaposleniId;
+    public Long getRacunovodjaId() {
+        return racunovodjaId;
     }
 
-    public void setZaposleniId(Long zaposleniId) {
-        this.zaposleniId = zaposleniId;
+    public void setRacunovodjaId(Long zaposleniId) {
+        this.racunovodjaId = zaposleniId;
     }
 
     @Override
@@ -25,11 +25,11 @@ public class Racunovodja {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Racunovodja that = (Racunovodja) o;
-        return Objects.equals(zaposleniId, that.zaposleniId);
+        return Objects.equals(racunovodjaId, that.racunovodjaId);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(zaposleniId);
+        return Objects.hash(racunovodjaId);
     }
 }

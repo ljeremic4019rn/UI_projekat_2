@@ -8,7 +8,7 @@ import java.util.Objects;
 public class Lekar {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    private Long zaposleniId;
+    private Long lekarId;
     private String specijalizacija;
     @ManyToMany
     private List<Odeljenje> odeljenje;
@@ -41,12 +41,12 @@ public class Lekar {
         this.covidListe = covidListe;
     }
 
-    public Long getZaposleniId() {
-        return zaposleniId;
+    public Long getLekarId() {
+        return lekarId;
     }
 
-    public void setZaposleniId(Long zaposleniId) {
-        this.zaposleniId = zaposleniId;
+    public void setLekarId(Long zaposleniId) {
+        this.lekarId = zaposleniId;
     }
 
     public String getSpecijalizacija() {
@@ -102,11 +102,11 @@ public class Lekar {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Lekar lekar = (Lekar) o;
-        return zaposleniId == lekar.zaposleniId && Objects.equals(specijalizacija, lekar.specijalizacija) && Objects.equals(odeljenje, lekar.odeljenje) && Objects.equals(odeljenjeDezurni, lekar.odeljenjeDezurni) && Objects.equals(primarnoOdeljenje, lekar.primarnoOdeljenje) && Objects.equals(procedure, lekar.procedure) && Objects.equals(pacijenti, lekar.pacijenti);
+        return lekarId == lekar.lekarId && Objects.equals(specijalizacija, lekar.specijalizacija) && Objects.equals(odeljenje, lekar.odeljenje) && Objects.equals(odeljenjeDezurni, lekar.odeljenjeDezurni) && Objects.equals(primarnoOdeljenje, lekar.primarnoOdeljenje) && Objects.equals(procedure, lekar.procedure) && Objects.equals(pacijenti, lekar.pacijenti);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(zaposleniId, specijalizacija, odeljenje, odeljenjeDezurni, primarnoOdeljenje, procedure, pacijenti);
+        return Objects.hash(lekarId, specijalizacija, odeljenje, odeljenjeDezurni, primarnoOdeljenje, procedure, pacijenti);
     }
 }

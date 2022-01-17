@@ -1,16 +1,16 @@
 package com.example.demo.dto;
 
 public class RacunovodjaDto {
-    private int zaposleniId;
+    private int racunovodjaId;
 
     public RacunovodjaDto() {
     }
 
-    public void setZaposleniId(int zaposleniId) {
-        this.zaposleniId = zaposleniId;
+    public void setRacunovodjaId(int racunovodjaId) {
+        this.racunovodjaId = racunovodjaId;
     }
 
-    public int getZaposleniId() {
-        return this.zaposleniId;
+    public int getRacunovodjaId() {
+        return this.racunovodjaId;
     }
 }
