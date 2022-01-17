@@ -27,7 +27,7 @@ public class PacijentKarton {
     private PrijemnaLista prijemnaLista;
     @OneToMany
     private List<Dijagonza> dijaknoze;
-    @OneToMany
+    @ManyToMany
     private List<Osiguranje> osiguranja;
     @OneToMany
     private List<CovidLista> covidListe;

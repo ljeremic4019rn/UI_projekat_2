@@ -1,9 +1,7 @@
 package com.example.demo.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Osiguranje {
@@ -12,6 +10,8 @@ public class Osiguranje {
     private Long osiguranjeId;
     private String ime;
     private String tip;
+    @ManyToMany
+    private List<PacijentKarton> pacijenti;
 
     public Long getOsiguranjeId() {
         return osiguranjeId;
@@ -31,6 +31,14 @@ public class Osiguranje {
 
     public String getTip() {
         return tip;
+    }
+
+    public List<PacijentKarton> getPacijenti() {
+        return pacijenti;
+    }
+
+    public void setPacijenti(List<PacijentKarton> pacijenti) {
+        this.pacijenti = pacijenti;
     }
 
     public void setTip(String tip) {
