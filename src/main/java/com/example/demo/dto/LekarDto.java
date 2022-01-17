@@ -3,7 +3,7 @@ package com.example.demo.dto;
 import java.util.List;
 
 public class LekarDto {
-    private int zaposleniId;
+    private int lekarId;
     private String specijalizacija;
     private List<OdeljenjeDto> odeljenja;
     private OdeljenjeDto odeljenjeDezurni;
@@ -73,12 +73,12 @@ public class LekarDto {
     public LekarDto() {
     }
 
-    public void setZaposleniId(int zaposleniId) {
-        this.zaposleniId = zaposleniId;
+    public void setLekarId(int lekarId) {
+        this.lekarId = lekarId;
     }
 
-    public int getZaposleniId() {
-        return this.zaposleniId;
+    public int getLekarId() {
+        return this.lekarId;
     }
 
     public void setSpecijalizacija(String specijalizacija) {

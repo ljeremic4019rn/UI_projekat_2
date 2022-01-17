@@ -13,7 +13,7 @@ public class PrijemnaLista {
     private Date datumPrijema;
     private Date datumOtpustaja;
     private Integer pacijentId;
-    private Long zaposleniId;
+    private Long bolnicaZaposleniId;
     @OneToMany
     private List<PacijentKarton> pacijent;
     @ManyToOne
@@ -62,12 +62,12 @@ public class PrijemnaLista {
 
 
 
-    public Long getZaposleniId() {
-        return zaposleniId;
+    public Long getBolnicaZaposleniId() {
+        return bolnicaZaposleniId;
     }
 
-    public void setZaposleniId(Long zaposleniId) {
-        this.zaposleniId = zaposleniId;
+    public void setBolnicaZaposleniId(Long zaposleniId) {
+        this.bolnicaZaposleniId = zaposleniId;
     }
 
     public List<PacijentKarton> getPacijent() {

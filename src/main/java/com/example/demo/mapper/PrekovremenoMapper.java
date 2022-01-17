@@ -10,7 +10,7 @@ public class  PrekovremenoMapper  {
         Prekovremeno prekovremeno = new Prekovremeno();
         prekovremeno.setDatum(prekovremenoDto.getDatum());
         prekovremeno.setTrajanje(prekovremenoDto.getPrekovremenoId());
-        prekovremeno.setZaposleniId(prekovremenoDto.getZaposleniId());
+        prekovremeno.setBolnicaZaposleniId(prekovremenoDto.getBolnicaZaposleniId());
 
         return prekovremeno;
     }
@@ -19,7 +19,7 @@ public class  PrekovremenoMapper  {
         PrekovremenoDto prekovremenoDto = new PrekovremenoDto();
         prekovremenoDto.setDatum(save.getDatum());
         prekovremenoDto.setTrajanje(save.getTrajanje());
-        prekovremenoDto.setZaposleniId(save.getZaposleniId());
+        prekovremenoDto.setBolnicaZaposleniId(save.getBolnicaZaposleniId());
 
         return prekovremenoDto;
 

@@ -10,7 +10,7 @@ public class  OdmorMapper {
         Odmor odmor = new Odmor();
         odmor.setKraj(odmorDto.getKraj());
         odmor.setPocetak(odmorDto.getPocetak());
-        odmor.setZaposleniId(odmorDto.getZaposleniId());
+        odmor.setBolnicaZaposleniId(odmorDto.getBolnicaZaposleniId());
         return odmor;
 
     }
@@ -19,7 +19,7 @@ public class  OdmorMapper {
         OdmorDto odmorDto = new OdmorDto();
         odmorDto.setKraj(save.getKraj());
         odmorDto.setPocetak(save.getPocetak());
-        odmorDto.setZaposleniId(save.getZaposleniId());
+        odmorDto.setBolnicaZaposleniId(save.getBolnicaZaposleniId());
         return odmorDto;
 
     }

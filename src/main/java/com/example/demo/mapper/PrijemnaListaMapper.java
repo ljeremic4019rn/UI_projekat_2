@@ -18,7 +18,7 @@ public class  PrijemnaListaMapper {
         prijemnaLista.setDatumPrijema(prijemnaListaDto.getDatumPrijema());
         prijemnaLista.setDatumOtpustaja(prijemnaListaDto.getDatumOtpustaja());
         prijemnaLista.setPacijentId(prijemnaListaDto.getPacijentId());
-        prijemnaLista.setZaposleniId(prijemnaListaDto.getZaposleniId());
+        prijemnaLista.setBolnicaZaposleniId(prijemnaListaDto.getZaposleniId());
         prijemnaLista.setSoba(sobaMapper.toEntity(prijemnaListaDto.getSoba()));
         return prijemnaLista;
 
@@ -29,7 +29,7 @@ public class  PrijemnaListaMapper {
         prijemnaListaDto.setDatumPrijema(save.getDatumPrijema());
         prijemnaListaDto.setDatumOtpustaja(save.getDatumOtpustaja());
         prijemnaListaDto.setPacijentId(save.getPacijentId());
-        prijemnaListaDto.setZaposleniId(save.getZaposleniId());
+        prijemnaListaDto.setZaposleniId(save.getBolnicaZaposleniId());
         prijemnaListaDto.setSoba(sobaMapper.toDto(save.getSoba()));
         return prijemnaListaDto;
 

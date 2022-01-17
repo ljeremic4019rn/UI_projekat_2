@@ -13,7 +13,7 @@ public class Prekovremeno {
     private Long prekovremenoId;
     private Date datum;
     private Integer trajanje;
-    private Long zaposleniId;
+    private Long bolnicaZaposleniId;
 
     public Long getPrekovremenoId() {
         return prekovremenoId;
@@ -39,12 +39,12 @@ public class Prekovremeno {
         this.trajanje = trajanje;
     }
 
-    public Long getZaposleniId() {
-        return zaposleniId;
+    public Long getBolnicaZaposleniId() {
+        return bolnicaZaposleniId;
     }
 
-    public void setZaposleniId(Long zaposleniId) {
-        this.zaposleniId = zaposleniId;
+    public void setBolnicaZaposleniId(Long zaposleniId) {
+        this.bolnicaZaposleniId = zaposleniId;
     }
 
 }

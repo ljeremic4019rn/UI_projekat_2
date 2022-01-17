@@ -9,7 +9,7 @@ public class ObukaProcedureDto {
     private String procedura;
     private Date datumIsteka;
     private String sertifikat;
-    private Long zaposleniId;
+    private Long bolnicaZaposleniId;
 
     public ObukaProcedureDto() {
     }
@@ -54,11 +54,11 @@ public class ObukaProcedureDto {
         return this.sertifikat;
     }
 
-    public void setZaposleniId(Long zaposleniId) {
-        this.zaposleniId = zaposleniId;
+    public void setBolnicaZaposleniId(Long bolnicaZaposleniId) {
+        this.bolnicaZaposleniId = bolnicaZaposleniId;
     }
 
-    public Long getZaposleniId() {
-        return this.zaposleniId;
+    public Long getBolnicaZaposleniId() {
+        return this.bolnicaZaposleniId;
     }
 }

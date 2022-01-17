@@ -7,7 +7,7 @@ public class PrekovremenoDto {
     private int prekovremenoId;
     private Date datum;
     private Integer trajanje;
-    private Long zaposleniId;
+    private Long bolnicaZaposleniId;
 
     public PrekovremenoDto() {
     }
@@ -36,11 +36,11 @@ public class PrekovremenoDto {
         return this.trajanje;
     }
 
-    public void setZaposleniId(Long zaposleniId) {
-        this.zaposleniId = zaposleniId;
+    public void setBolnicaZaposleniId(Long bolnicaZaposleniId) {
+        this.bolnicaZaposleniId = bolnicaZaposleniId;
     }
 
-    public Long getZaposleniId() {
-        return this.zaposleniId;
+    public Long getBolnicaZaposleniId() {
+        return this.bolnicaZaposleniId;
     }
 }

@@ -7,7 +7,7 @@ public class OdmorDto  {
     private int odmorId;
     private Date kraj;
     private Date pocetak;
-    private Long zaposleniId;
+    private Long bolnicaZaposleniId;
 
     public OdmorDto() {
     }
@@ -36,11 +36,11 @@ public class OdmorDto  {
         return this.pocetak;
     }
 
-    public void setZaposleniId(Long zaposleniId) {
-        this.zaposleniId = zaposleniId;
+    public void setBolnicaZaposleniId(Long bolnicaZaposleniId) {
+        this.bolnicaZaposleniId = bolnicaZaposleniId;
     }
 
-    public Long getZaposleniId() {
-        return this.zaposleniId;
+    public Long getBolnicaZaposleniId() {
+        return this.bolnicaZaposleniId;
     }
 }

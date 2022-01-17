@@ -13,7 +13,7 @@ public class ObukaProcedure {
     private String procedura;
     private Date datumIsteka;
     private String sertifikat;
-    private Long zaposleniId;
+    private Long bolnicaZaposleniId;
 
     public Long getObukaProdedureId() {
         return obukaProdedureId;
@@ -55,12 +55,12 @@ public class ObukaProcedure {
         this.sertifikat = sertifikat;
     }
 
-    public Long getZaposleniId() {
-        return zaposleniId;
+    public Long getBolnicaZaposleniId() {
+        return bolnicaZaposleniId;
     }
 
-    public void setZaposleniId(Long zaposleniId) {
-        this.zaposleniId = zaposleniId;
+    public void setBolnicaZaposleniId(Long zaposleniId) {
+        this.bolnicaZaposleniId = zaposleniId;
     }
 
 }

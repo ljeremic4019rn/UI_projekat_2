@@ -12,7 +12,7 @@ public class  ObukaProcedureMapper{
         obukaProcedure.setProcedura(obukaProcedureDto.getProcedura());
         obukaProcedureDto.setDatumIsteka(obukaProcedureDto.getDatumIsteka());
         obukaProcedure.setSertifikat(obukaProcedureDto.getSertifikat());
-        obukaProcedure.setZaposleniId(obukaProcedureDto.getZaposleniId());
+        obukaProcedure.setBolnicaZaposleniId(obukaProcedureDto.getBolnicaZaposleniId());
 
         return obukaProcedure;
 
@@ -24,7 +24,7 @@ public class  ObukaProcedureMapper{
         obukaProcedureDto.setProcedura(save.getProcedura());
         obukaProcedureDto.setDatumIsteka(save.getDatumIsteka());
         obukaProcedureDto.setSertifikat(save.getSertifikat());
-        obukaProcedureDto.setZaposleniId(save.getZaposleniId());
+        obukaProcedureDto.setBolnicaZaposleniId(save.getBolnicaZaposleniId());
 
         return obukaProcedureDto;
 

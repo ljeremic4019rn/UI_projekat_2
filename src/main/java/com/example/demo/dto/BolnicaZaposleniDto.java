@@ -1,12 +1,9 @@
 package com.example.demo.dto;
 
-import com.example.demo.model.PrijemnaLista;
-import com.example.demo.model.Sestra;
-
 import java.util.List;
 
 public class BolnicaZaposleniDto {
-    private int zaposleniId;
+    private int bolnicaZaposleniId;
     private String ime;
     private String prezime;
 
@@ -95,12 +92,12 @@ public class BolnicaZaposleniDto {
     public BolnicaZaposleniDto() {
     }
 
-    public void setZaposleniId(int zaposleniId) {
-        this.zaposleniId = zaposleniId;
+    public void setBolnicaZaposleniId(int bolnicaZaposleniId) {
+        this.bolnicaZaposleniId = bolnicaZaposleniId;
     }
 
-    public int getZaposleniId() {
-        return this.zaposleniId;
+    public int getBolnicaZaposleniId() {
+        return this.bolnicaZaposleniId;
     }
 
     public void setIme(String ime) {
