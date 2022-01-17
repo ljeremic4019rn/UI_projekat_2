@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface LekarRepository extends JpaRepository<Lekar, int>, JpaSpecificationExecutor<Lekar> {
+public interface LekarRepository extends JpaRepository<Lekar, Long>, JpaSpecificationExecutor<Lekar> {
 }

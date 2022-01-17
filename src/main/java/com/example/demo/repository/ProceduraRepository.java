@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ProceduraRepository extends JpaRepository<Procedura, int>, JpaSpecificationExecutor<Procedura> {
+public interface ProceduraRepository extends JpaRepository<Procedura, Long>, JpaSpecificationExecutor<Procedura> {
 }

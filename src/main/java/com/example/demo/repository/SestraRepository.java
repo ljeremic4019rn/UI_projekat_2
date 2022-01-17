@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface SestraRepository extends JpaRepository<Sestra, int>, JpaSpecificationExecutor<Sestra> {
+public interface SestraRepository extends JpaRepository<Sestra, Long>, JpaSpecificationExecutor<Sestra> {
 }

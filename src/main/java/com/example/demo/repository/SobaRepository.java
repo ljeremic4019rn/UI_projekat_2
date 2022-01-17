@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface SobaRepository extends JpaRepository<Soba, int>, JpaSpecificationExecutor<Soba> {
+public interface SobaRepository extends JpaRepository<Soba, Long>, JpaSpecificationExecutor<Soba> {
 }

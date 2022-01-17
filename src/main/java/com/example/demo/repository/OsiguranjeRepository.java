@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface OsiguranjeRepository extends JpaRepository<Osiguranje, int>, JpaSpecificationExecutor<Osiguranje> {
+public interface OsiguranjeRepository extends JpaRepository<Osiguranje, Long>, JpaSpecificationExecutor<Osiguranje> {
 }

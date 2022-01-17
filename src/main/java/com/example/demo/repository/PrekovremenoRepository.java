@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PrekovremenoRepository extends JpaRepository<Prekovremeno, int>, JpaSpecificationExecutor<Prekovremeno> {
+public interface PrekovremenoRepository extends JpaRepository<Prekovremeno, Long>, JpaSpecificationExecutor<Prekovremeno> {
 }

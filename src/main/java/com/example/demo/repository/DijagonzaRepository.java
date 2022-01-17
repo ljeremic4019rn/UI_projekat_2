@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface DijagonzaRepository extends JpaRepository<Dijagonza, int>, JpaSpecificationExecutor<Dijagonza> {
+public interface DijagonzaRepository extends JpaRepository<Dijagonza, Long>, JpaSpecificationExecutor<Dijagonza> {
 }

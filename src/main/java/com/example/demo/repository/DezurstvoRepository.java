@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface DezurstvoRepository extends JpaRepository<Dezurstvo, int>, JpaSpecificationExecutor<Dezurstvo> {
+public interface DezurstvoRepository extends JpaRepository<Dezurstvo, Long>, JpaSpecificationExecutor<Dezurstvo> {
 }

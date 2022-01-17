@@ -6,33 +6,33 @@
   <persistence-unit name="default">
 
     <class>com.example.demo.model.Blok</class>
-    <class>com.example.demo.model.usless.BlokSestraDezurstvo</class>
+<!--    <class>com.example.demo.model.usless.BlokSestraDezurstvo</class>-->
     <class>com.example.demo.model.CovidLista</class>
-    <class>com.example.demo.model.usless.CovidListaLek</class>
+<!--    <class>com.example.demo.model.usless.CovidListaLek</class>-->
     <class>com.example.demo.model.Dezurstvo</class>
     <class>com.example.demo.model.Dijagonza</class>
     <class>com.example.demo.model.Lek</class>
-    <class>com.example.demo.model.usless.LekRecept</class>
+<!--    <class>com.example.demo.model.usless.LekRecept</class>-->
     <class>com.example.demo.model.Lekar</class>
-    <class>com.example.demo.model.usless.LekarProcedura</class>
+<!--    <class>com.example.demo.model.usless.LekarProcedura</class>-->
     <class>com.example.demo.model.ObukaProcedure</class>
     <class>com.example.demo.model.Odeljenje</class>
-    <class>com.example.demo.model.usless.OdeljenjeLekarDezurstvo</class>
+<!--    <class>com.example.demo.model.usless.OdeljenjeLekarDezurstvo</class>-->
     <class>com.example.demo.model.Odmor</class>
     <class>com.example.demo.model.Osiguranje</class>
     <class>com.example.demo.model.PacijentKarton</class>
-    <class>com.example.demo.model.usless.PacijentLek</class>
+<!--    <class>com.example.demo.model.usless.PacijentLek</class>-->
     <class>com.example.demo.model.Prekovremeno</class>
     <class>com.example.demo.model.PrijemnaLista</class>
     <class>com.example.demo.model.Procedura</class>
-    <class>com.example.demo.model.usless.ProceduraRecept</class>
+<!--    <class>com.example.demo.model.usless.ProceduraRecept</class>-->
     <class>com.example.demo.model.Racunovodja</class>
     <class>com.example.demo.model.Recept</class>
-    <class>com.example.demo.model.usless.ReceptLekar</class>
+<!--    <class>com.example.demo.model.usless.ReceptLekar</class>-->
     <class>com.example.demo.model.Sestra</class>
-    <class>com.example.demo.model.usless.SestraProcedura</class>
+<!--    <class>com.example.demo.model.usless.SestraProcedura</class>-->
     <class>com.example.demo.model.Soba</class>
-    <class>com.example.demo.model.Bolnica</class>
+    <class>com.example.demo.model.BolnicaZaposleni</class>
     <properties>
       <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/bolnicamodel"/>
       <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>

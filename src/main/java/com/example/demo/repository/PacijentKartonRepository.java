@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PacijentKartonRepository extends JpaRepository<PacijentKarton, int>, JpaSpecificationExecutor<PacijentKarton> {
+public interface PacijentKartonRepository extends JpaRepository<PacijentKarton, Long>, JpaSpecificationExecutor<PacijentKarton> {
 }

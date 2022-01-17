@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface OdeljenjeRepository extends JpaRepository<Odeljenje, int>, JpaSpecificationExecutor<Odeljenje> {
+public interface OdeljenjeRepository extends JpaRepository<Odeljenje, Long>, JpaSpecificationExecutor<Odeljenje> {
 }

@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface RacunovodjaRepository extends JpaRepository<Racunovodja, int>, JpaSpecificationExecutor<Racunovodja> {
+public interface RacunovodjaRepository extends JpaRepository<Racunovodja, Long>, JpaSpecificationExecutor<Racunovodja> {
 }

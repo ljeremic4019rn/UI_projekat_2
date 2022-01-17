@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface OdmorRepository extends JpaRepository<Odmor, int>, JpaSpecificationExecutor<Odmor> {
+public interface OdmorRepository extends JpaRepository<Odmor, Long>, JpaSpecificationExecutor<Odmor> {
 }

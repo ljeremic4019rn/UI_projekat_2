@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface LekRepository extends JpaRepository<Lek, int>, JpaSpecificationExecutor<Lek> {
+public interface LekRepository extends JpaRepository<Lek, Long>, JpaSpecificationExecutor<Lek> {
 }

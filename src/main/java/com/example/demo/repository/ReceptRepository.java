@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ReceptRepository extends JpaRepository<Recept, int>, JpaSpecificationExecutor<Recept> {
+public interface ReceptRepository extends JpaRepository<Recept, Long>, JpaSpecificationExecutor<Recept> {
 }

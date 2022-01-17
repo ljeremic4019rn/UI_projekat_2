@@ -26,25 +26,25 @@ public class BlokController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<BlokDto> findById(@PathVariable("id") int id) {
+    public ResponseEntity<BlokDto> findById(@PathVariable("id") Long id) {
         BlokDto blok = blokService.findById(id);
         return ResponseEntity.ok(blok);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> delete(@PathVariable("id") int id) {
+    public ResponseEntity<Void> delete(@PathVariable("id") Long id) {
         blokService.deleteById(id);
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping("/page-query")
-    public ResponseEntity<Page<BlokDto>> pageQuery(BlokDto blokDto, @PageableDefault(sort = "createAt", direction = Sort.Direction.DESC) Pageable pageable) {
-        Page<BlokDto> blokPage = blokService.findByCondition(blokDto, pageable);
-        return ResponseEntity.ok(blokPage);
-    }
+//    @GetMapping("/page-query")
+//    public ResponseEntity<Page<BlokDto>> pageQuery(BlokDto blokDto, @PageableDefault(sort = "createAt", direction = Sort.Direction.DESC) Pageable pageable) {
+//        Page<BlokDto> blokPage = blokService.findByCondition(blokDto, pageable);
+//        return ResponseEntity.ok(blokPage);
+//    }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Void> update(@RequestBody @Validated BlokDto blokDto, @PathVariable("id") int id) {
+    public ResponseEntity<Void> update(@RequestBody @Validated BlokDto blokDto, @PathVariable("id") Long id) {
         blokService.update(blokDto, id);
         return ResponseEntity.ok().build();
     }

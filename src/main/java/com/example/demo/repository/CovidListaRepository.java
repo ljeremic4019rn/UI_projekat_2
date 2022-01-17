@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface CovidListaRepository extends JpaRepository<CovidLista, int>, JpaSpecificationExecutor<CovidLista> {
+public interface CovidListaRepository extends JpaRepository<CovidLista, Long>, JpaSpecificationExecutor<CovidLista> {
 }
